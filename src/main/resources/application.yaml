@@ -1,0 +1,11 @@
+quarkus:
+  http:
+    port: 8091
+  native:
+    additional-build-args:
+    - --allow-incomplete-classpath
+    - --initialize-at-run-time=org.apache.http.impl.auth.NTLMEngineImpl
+
+bot:
+  username: <YOUR_USERNAME>
+  token: <YOUR_TOKEN>
